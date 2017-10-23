@@ -6,11 +6,16 @@
 //}
 
 android {  
-  defaultConfig {  
-    generatedDensities = []
-    applicationId = "org.nativescript.demo"  
-  }  
-  aaptOptions {  
-    additionalParameters "--no-version-vectors"  
-  }  
+    defaultConfig {  
+        generatedDensities = []
+        applicationId = "org.nativescript.demo"  
+    }  
+    aaptOptions {  
+        additionalParameters "--no-version-vectors"  
+    }  
 } 
+repositories {
+    maven {
+        url "https://maven.google.com"
+    }
+}
