@@ -1,11 +1,11 @@
 android {
     productFlavors {
         "nativescriptstripe" {
-            dimension "nativescriptsrtipe"
+            dimension "nativescriptstripe"
         }
     }
 }
 
 dependencies {
-    compile 'com.stripe:stripe-android:3.0.1'
+    compile 'com.stripe:stripe-android:5.1.0'
 }
