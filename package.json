@@ -13,7 +13,7 @@
     "build": "tsc",
     "demo.ios": "npm run preparedemo && cd demo && tns debug ios",
     "demo.ios.device": "npm run preparedemo && cd demo && tns run ios",
-    "demo.android": "npm run preparedemo && cd demo && tns run android",
+    "demo.android": "npm run preparedemo && cd demo && tns run android --emulator --timeout 0",
     "test.ios": "cd demo && tns test ios --emulator",
     "test.ios.device": "cd demo && tns test ios",
     "test.android": "cd demo && tns test android",
