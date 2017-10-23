@@ -3,7 +3,7 @@
     xmlns:stripe="nativescript-stripe"
     navigatingTo="navigatingTo"
     class="page">
-    <StackLayout>
+    <StackLayout style="padding: 20px;">
         <stripe:CreditCardView/>
         <stripe:CreditCardView/>
         <stripe:CreditCardView/>

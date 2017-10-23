@@ -4,7 +4,7 @@
   "readme": "NativeScript Application",
   "repository": "<fill-your-repository-here>",
   "nativescript": {
-    "id": "org.nativescript.demo",
+    "id": "net.dropdeliver.Drop",
     "tns-android": {
       "version": "3.2.0"
     },
@@ -13,7 +13,7 @@
     }
   },
   "dependencies": {
-    "nativescript-stripe": "file:..",
+    "nativescript-stripe": "file:///C:\\Users\\Chris\\git\\nativescript-stripe",
     "nativescript-theme-core": "~1.0.2",
     "tns-core-modules": "3.2.0"
   },
