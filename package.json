@@ -1,6 +1,6 @@
 {
   "name": "nativescript-stripe",
-  "version": "3.2.0",
+  "version": "1.0.0",
   "description": "",
   "main": "stripe",
   "nativescript": {
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/triniwiz/nativescript-stripe.git"
+    "url": "https://github.com/chrissantosproduction/nativescript-stripe.git"
   },
   "keywords": [
     "NativeScript",
@@ -31,8 +31,8 @@
     "iOS"
   ],
   "author": {
-    "name": "Osei Fortune",
-    "email": "fortune.osei@yahoo.com"
+    "name": "Christopher Santos",
+    "email": "chrissantosproduction@gmail.com"
   },
   "bugs": {
     "url": "https://github.com/triniwiz/nativescript-stripe/issues"
