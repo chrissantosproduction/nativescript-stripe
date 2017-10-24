@@ -33,10 +33,10 @@ export class Card {
     get cvc(): string {
         return this._card.getCVC();
     }
-    get expMonth(): any {
+    get expMonth(): number {
         return this._card.getExpMonth();
     }
-    get expYear(): any {
+    get expYear(): number {
         return this._card.getExpYear();
     }
     get name(): string {

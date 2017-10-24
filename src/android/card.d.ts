@@ -9,8 +9,8 @@ export declare class Card {
     validateExpYear(): boolean;
     readonly number: string;
     readonly cvc: string;
-    readonly expMonth: any;
-    readonly expYear: any;
+    readonly expMonth: number;
+    readonly expYear: number;
     name: string;
     addressLine1: string;
     addressLine2: string;

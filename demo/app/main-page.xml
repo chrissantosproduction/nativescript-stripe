@@ -4,8 +4,6 @@
     navigatingTo="navigatingTo"
     class="page">
     <StackLayout style="padding: 20px;">
-        <stripe:CreditCardView/>
-        <stripe:CreditCardView/>
-        <stripe:CreditCardView/>
+        <stripe:CreditCardView id="card"/>
     </StackLayout>
 </Page>
