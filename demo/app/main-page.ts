@@ -6,7 +6,7 @@ let stripe;
 export function navigatingTo(args: EventData) {
     const card = new Card("1111111111111111", 1, 11, "111");
     if (card.validateCard()) {
-        stripe = new Stripe("pk_test_OHSX2noWHfjZMZ6uj0dbeSN7");
+        stripe = new Stripe('KEY');
         stripe.createToken(card.card, (error, token) => {
             if (!error) {
                 console.log(token)

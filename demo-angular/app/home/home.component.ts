@@ -15,11 +15,10 @@ export class HomeComponent {
     public submit() {
         let ccView: CreditCardView = this._page.getViewById('cardView');
         let cc: Card = ccView.card;
-        //alert(JSON.stringify(cc));
 
-        let stripe: Stripe = new Stripe('pk_test_OHSX2noWHfjZMZ6uj0dbeSN7')
+        let stripe: Stripe = new Stripe('KEY');
         stripe.createToken(cc.card, function(err, token) {
-            alert(`${err} \n ${token} \n ${cc.number} ${cc.expMonth} ${cc.expYear} ${cc.cvc}`);
+            alert(token.getId());
         })
     }
 }
