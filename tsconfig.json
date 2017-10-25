@@ -25,6 +25,7 @@
         "**/*.aot.ts",
         "node_modules",
         "platforms",
-        "demo"
+        "demo",
+        "demo-angular"
     ]
 }
