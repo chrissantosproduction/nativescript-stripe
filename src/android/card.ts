@@ -2,6 +2,11 @@ declare const com, java;
 export class Card {
     private _card: any /*com.stripe.android.model.Card*/;
     constructor(cardNumber: string, cardExpMonth: any, cardExpYear: any, cardCVC: string) {
+        if (typeof cardExpMonth === 'object' || typeof cardExpMonth === 'string')
+            cardExpMonth = parseInt(cardExpMonth)
+        if (typeof cardExpYear === 'object' || typeof cardExpYear === 'string')
+            cardExpYear = parseInt(cardExpYear);
+
         this._card = new com.stripe.android.model.Card(
             new java.lang.String(cardNumber),
             new java.lang.Integer(cardExpMonth),
