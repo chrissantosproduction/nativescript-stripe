@@ -14,10 +14,12 @@
     "demo.ios": "npm run preparedemo && cd demo && tns debug ios",
     "demo.ios.device": "npm run preparedemo && cd demo && tns run ios",
     "demo.android": "npm run preparedemo && cd demo && tns run android --emulator --timeout 0",
+    "demo.android.angular":"npm run preparedemoangular && cd demo-angular && tns run android --emulator --timeout 0",
     "test.ios": "cd demo && tns test ios --emulator",
     "test.ios.device": "cd demo && tns test ios",
     "test.android": "cd demo && tns test android",
     "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-stripe && tns plugin add .. && tns install",
+    "preparedemoangular": "npm run build && cd demo-angular && tns plugin remove nativescript-stripe && tns plugin add .. && tns install",
     "setup": "npm i && cd demo && npm i && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
   },
   "repository": {
@@ -43,7 +45,7 @@
   "devDependencies": {
     "tns-core-modules": "^3.2.0",
     "tns-platform-declarations": "^3.2.0",
-    "typescript": "^2.3.4",
+    "typescript": "^2.4.2",
     "@angular/compiler": "~4.4.1",
     "@angular/core": "~4.4.1",
     "@angular/common": "~4.4.1",
@@ -51,9 +53,11 @@
     "@angular/forms": "~4.4.1",
     "@angular/http": "~4.4.1",
     "@angular/router": "~4.4.1",
-    "rxjs": "~5.0.0",
+    "reflect-metadata": "~0.1.8",
+    "rxjs": "~5.4.2",
     "zone.js": "^0.8.4",
-    "nativescript-angular": "^4.4.1"
+    "nativescript-angular": "^4.4.1",
+    "nativescript-dev-typescript": "~0.5.0"
   },
   "dependencies": {},
   "peerDependencies": {

@@ -18,3 +18,13 @@ demo/metadata-x86_64/
 hooks
 .DS_Store
 demo/.DS_Store
+demo-angular/app/*.js
+!demo-angular/karma.conf.js
+!demo-angular/app/tests/*.js
+demo-angular/*.d.ts
+demo-angular/lib
+demo-angular/platforms
+demo-angular/node_modules
+node_modules
+demo-angular/metadata-i386/
+demo-angular/metadata-x86_64/

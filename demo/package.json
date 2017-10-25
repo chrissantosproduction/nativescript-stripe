@@ -13,7 +13,7 @@
     }
   },
   "dependencies": {
-    "nativescript-stripe": "file:///C:\\Users\\Chris\\git\\nativescript-stripe",
+    "nativescript-stripe": "file:///Users/chris/git/nativescript-stripe",
     "nativescript-theme-core": "~1.0.2",
     "tns-core-modules": "3.2.0"
   },
