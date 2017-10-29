@@ -14,7 +14,7 @@
     "demo.ios": "npm run preparedemo && cd demo && tns debug ios",
     "demo.ios.device": "npm run preparedemo && cd demo && tns run ios",
     "demo.android": "npm run preparedemo && cd demo && tns run android --emulator --timeout 0",
-    "demo.android.angular":"npm run preparedemoangular && cd demo-angular && tns run android --emulator --timeout 0",
+    "demo.android.angular": "npm run preparedemoangular && cd demo-angular && tns run android --emulator --timeout 0",
     "test.ios": "cd demo && tns test ios --emulator",
     "test.ios.device": "cd demo && tns test ios",
     "test.android": "cd demo && tns test android",
@@ -43,7 +43,7 @@
   "homepage": "https://github.com/triniwiz/nativescript-stripe",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "tns-core-modules": "^3.2.0",
+    "tns-core-modules": "^3.3.0",
     "tns-platform-declarations": "^3.2.0",
     "typescript": "^2.4.2",
     "@angular/compiler": "~4.4.1",
@@ -59,7 +59,9 @@
     "nativescript-angular": "^4.4.1",
     "nativescript-dev-typescript": "~0.5.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "nativescript": "^3.3.0"
+  },
   "peerDependencies": {
     "tns-core-modules": "^3.2.0"
   }
