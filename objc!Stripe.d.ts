@@ -1,7 +1,7 @@
 
-declare type UITextSmartDashesType = any; // inherited from UITextInputTraits
-declare type  UITextSmartInsertDeleteType = any; // inherited from UITextInputTraits
-declare type UITextSmartQuotesType = any;
+//declare type UITextSmartDashesType = any; // inherited from UITextInputTraits
+//declare type  UITextSmartInsertDeleteType = any; // inherited from UITextInputTraits
+//declare type UITextSmartQuotesType = any;
 
 declare class STPAPIClient extends NSObject {
 
