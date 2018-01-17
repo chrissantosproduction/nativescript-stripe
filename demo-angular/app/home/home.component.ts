@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CreditCardView, Card, Stripe } from 'nativescript-stripe';
+import { CreditCardView, Card, Stripe } from 'nativescript-stripe2';
 import { Page } from 'ui/page';
 
 @Component({
