@@ -1,9 +1,17 @@
 declare const com, java;
 export class Card {
     private _card: any /*com.stripe.android.model.Card*/;
-    constructor(cardNumber: string, cardExpMonth: any, cardExpYear: any, cardCVC: string) {
-        if (typeof cardExpMonth === 'object' || typeof cardExpMonth === 'string')
-            cardExpMonth = parseInt(cardExpMonth)
+    constructor(
+        cardNumber: string,
+        cardExpMonth: any,
+        cardExpYear: any,
+        cardCVC: string
+    ) {
+        if (
+            typeof cardExpMonth === 'object' ||
+            typeof cardExpMonth === 'string'
+        )
+            cardExpMonth = parseInt(cardExpMonth);
         if (typeof cardExpYear === 'object' || typeof cardExpYear === 'string')
             cardExpYear = parseInt(cardExpYear);
 
@@ -90,31 +98,25 @@ export class Card {
         this._card.setAddressState(value);
     }
 
-
     get addressCountry(): string {
         return this._card.getAddressCountry();
     }
-
 
     set addressCountry(value: string) {
         this._card.setAddressCountry(value);
     }
 
-
     get currency(): string {
         return this._card.getCurrency();
     }
-
 
     set currency(value: string) {
         this._card.setCurrency(value);
     }
 
-
     get last4(): string {
         return this._card.getLast4();
     }
-
 
     get brand(): string {
         return this._card.getBrand();

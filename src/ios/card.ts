@@ -1,7 +1,12 @@
-import { CardBrand } from "../card-view.common";
+import { CardBrand } from '../card-view.common';
 export class Card {
     private _card: STPCardParams;
-    constructor(cardNumber: string, cardExpMonth: any, cardExpYear: any, cardCVC: string) {
+    constructor(
+        cardNumber: string,
+        cardExpMonth: any,
+        cardExpYear: any,
+        cardCVC: string
+    ) {
         this._card = STPCardParams.alloc().init();
         this._card.number = cardNumber;
         this._card.expMonth = cardExpMonth;
@@ -13,7 +18,10 @@ export class Card {
     }
     validateNumber(): boolean {
         let isValid: boolean = false;
-        const state = STPCardValidator.validationStateForNumberValidatingCardBrand(this._card.number, true)
+        const state = STPCardValidator.validationStateForNumberValidatingCardBrand(
+            this._card.number,
+            true
+        );
         switch (state) {
             case STPCardValidationState.Valid:
                 isValid = true;
@@ -31,7 +39,10 @@ export class Card {
     validateCVC(): boolean {
         let isValid: boolean = false;
         const brand = STPCardValidator.brandForNumber(this._card.number);
-        const state = STPCardValidator.validationStateForCVCCardBrand(this._card.cvc, brand);
+        const state = STPCardValidator.validationStateForCVCCardBrand(
+            this._card.cvc,
+            brand
+        );
         switch (state) {
             case STPCardValidationState.Valid:
                 isValid = true;
@@ -47,14 +58,19 @@ export class Card {
     }
     validateCard(): boolean {
         try {
-            return STPCardValidator.validationStateForCard(this._card) === STPCardValidationState.Valid;
+            return (
+                STPCardValidator.validationStateForCard(this._card) ===
+                STPCardValidationState.Valid
+            );
         } catch (ex) {
             return false;
         }
     }
     validateExpMonth(): boolean {
         let isValid: boolean = false;
-        const state = STPCardValidator.validationStateForExpirationMonth(String(this._card.expMonth));
+        const state = STPCardValidator.validationStateForExpirationMonth(
+            String(this._card.expMonth)
+        );
         switch (state) {
             case STPCardValidationState.Valid:
                 isValid = true;
@@ -75,7 +91,7 @@ export class Card {
             String(this._card.expYear),
             String(this._card.expMonth),
             date.getFullYear(),
-            (date.getMonth() + 1)
+            date.getMonth() + 1
         );
         switch (state) {
             case STPCardValidationState.Valid:
@@ -148,57 +164,50 @@ export class Card {
         this._card.addressState = value;
     }
 
-
     get addressCountry(): string {
         return this._card.addressCountry;
     }
-
 
     set addressCountry(value: string) {
         this._card.addressCountry = value;
     }
 
-
     get currency(): string {
         return this._card.currency;
     }
-
 
     set currency(value: string) {
         this._card.currency = value;
     }
 
-
     get last4(): string {
         return this._card.last4;
     }
 
-
     get brand(): CardBrand {
-        let brand: CardBrand = "Unknown";
+        let brand: CardBrand = 'Unknown';
         switch (STPCardValidator.brandForNumber(this._card.number)) {
             case STPCardBrand.Visa:
-                brand = "Visa";
+                brand = 'Visa';
                 break;
             case STPCardBrand.Amex:
-                brand = "Amex";
+                brand = 'Amex';
                 break;
             case STPCardBrand.MasterCard:
-                brand = "MasterCard";
+                brand = 'MasterCard';
                 break;
             case STPCardBrand.Discover:
-                brand = "Discover";
+                brand = 'Discover';
                 break;
             case STPCardBrand.JCB:
-                brand = "JCB";
+                brand = 'JCB';
                 break;
             case STPCardBrand.DinersClub:
-                brand = "DinersClub";
+                brand = 'DinersClub';
                 break;
             case STPCardBrand.Unknown:
-                brand = "Unknown";
+                brand = 'Unknown';
                 break;
-
         }
 
         return brand;
@@ -208,14 +217,14 @@ export class Card {
      * Not available in IOS
      */
     get fingerprint(): string {
-        return "";
+        return '';
     }
 
     /**
      * Not available in IOS
      */
     get funding(): string {
-        return "";
+        return '';
     }
 
     get country(): string {

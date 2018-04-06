@@ -1,7 +1,12 @@
-import { CardBrand } from "../card-view.common";
+import { CardBrand } from '../card-view.common';
 export declare class Card {
     private _card;
-    constructor(cardNumber: string, cardExpMonth: any, cardExpYear: any, cardCVC: string);
+    constructor(
+        cardNumber: string,
+        cardExpMonth: any,
+        cardExpYear: any,
+        cardCVC: string
+    );
     readonly card: STPCardParams;
     validateNumber(): boolean;
     validateCVC(): boolean;

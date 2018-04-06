@@ -2,14 +2,14 @@
   "description": "NativeScript Application",
   "license": "SEE LICENSE IN <your-license-filename>",
   "readme": "NativeScript Application",
-  "repository": "<fill-your-repository-here>",
+  "repository": "https://github.com/chrissantosproduction/nativescript-stripe-sdk",
   "nativescript": {
     "id": "org.nativescript.demo",
     "tns-android": {
-      "version": "3.2.0"
+      "version": "3.4.2"
     },
     "tns-ios": {
-      "version": "3.2.0"
+      "version": "3.4.1"
     }
   },
   "dependencies": {

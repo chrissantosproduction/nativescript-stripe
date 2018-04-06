@@ -1,17 +1,17 @@
 import { EventData } from 'data/observable';
 import { Page } from 'ui/page';
 import { HelloWorldModel } from './main-view-model';
-import { Card, Stripe } from "nativescript-stripe";
+import { Card, Stripe } from 'nativescript-stripe-sdk';
 let stripe;
 export function navigatingTo(args: EventData) {
-    const card = new Card("1111111111111111", 1, 11, "111");
+    const card = new Card('1111111111111111', 1, 11, '111');
     if (card.validateCard()) {
         stripe = new Stripe('KEY');
         stripe.createToken(card.card, (error, token) => {
             if (!error) {
-                console.log(token)
+                console.log(token);
             } else {
-                console.log(error)
+                console.log(error);
             }
         });
     }

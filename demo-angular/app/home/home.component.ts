@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CreditCardView, Card, Stripe } from 'nativescript-stripe2';
+import { CreditCardView, Card, Stripe } from 'nativescript-stripe-sdk';
 import { Page } from 'ui/page';
 
 @Component({
@@ -7,10 +7,7 @@ import { Page } from 'ui/page';
     templateUrl: 'home/home.component.html'
 })
 export class HomeComponent {
-    constructor(
-        private _page: Page,
-    ) {
-    }
+    constructor(private _page: Page) {}
 
     public submit() {
         let ccView: CreditCardView = this._page.getViewById('cardView');
@@ -19,6 +16,6 @@ export class HomeComponent {
         let stripe: Stripe = new Stripe('KEY');
         stripe.createToken(cc.card, function(err, token) {
             alert(token.getId());
-        })
+        });
     }
 }

@@ -2,11 +2,14 @@
   "description": "NativeScript Application",
   "license": "SEE LICENSE IN <your-license-filename>",
   "readme": "NativeScript Application",
-  "repository": "<fill-your-repository-here>",
+  "repository": "https://github.com/chrissantosproduction/nativescript-stripe-sdk",
   "nativescript": {
-    "id": "org.nativescript.demoangular",
+    "id": "com.chrissantosproduction.nsstripe",
     "tns-android": {
-      "version": "3.2.0"
+      "version": "3.4.2"
+    },
+    "tns-ios": {
+      "version": "3.4.1"
     }
   },
   "dependencies": {
@@ -19,7 +22,7 @@
     "@angular/platform-browser": "~4.4.1",
     "@angular/router": "~4.4.1",
     "nativescript-angular": "~4.4.1",
-    "nativescript-stripe": "file:///Users/chris/git/nativescript-stripe-sdk",
+    "nativescript-stripe-sdk": "file:///Users/chris/git/nativescript-stripe-sdk",
     "nativescript-theme-core": "~1.0.2",
     "reflect-metadata": "~0.1.8",
     "rxjs": "~5.4.2",

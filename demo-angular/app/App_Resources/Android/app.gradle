@@ -19,3 +19,9 @@ repositories {
     url "https://maven.google.com"
   }
 }
+def settingsGradlePath = "$rootDir/../../app/App_Resources/Android/settings.gradle";
+def settingsGradleFile = new File(settingsGradlePath);
+if(settingsGradleFile.exists())
+{
+    apply from: settingsGradleFile;
+}

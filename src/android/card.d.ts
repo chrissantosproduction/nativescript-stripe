@@ -1,6 +1,11 @@
 export declare class Card {
     private _card;
-    constructor(cardNumber: string, cardExpMonth: any, cardExpYear: any, cardCVC: string);
+    constructor(
+        cardNumber: string,
+        cardExpMonth: any,
+        cardExpYear: any,
+        cardCVC: string
+    );
     readonly card: any;
     validateNumber(): boolean;
     validateCVC(): boolean;
